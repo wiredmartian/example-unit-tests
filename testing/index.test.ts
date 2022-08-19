@@ -13,7 +13,7 @@ describe('UserServiceImplementation', () => {
             // Arrange
             let carId = "1"
             let error: any
-            
+
             jest.spyOn(carService, "logCarId").mockImplementation(() => {
                 console.log("hello")
             })
@@ -29,6 +29,7 @@ describe('UserServiceImplementation', () => {
             expect(error).toBeInstanceOf(CarServiceException)
         })
 
+        // not a real test
         it('should return car object when successfully called', () => {
             // Arrange
             const expected: Car = {

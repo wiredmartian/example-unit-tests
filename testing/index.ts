@@ -15,10 +15,6 @@ export class CarServiceImplementation implements CarService {
 
 }
 
-function bootstrapCarService() {
-    return new CarServiceImplementation()
-}
-
 // service exception
 export class CarServiceException extends Error {
     constructor(message: string) {
